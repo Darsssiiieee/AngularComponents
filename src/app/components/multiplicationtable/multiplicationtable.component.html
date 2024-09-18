@@ -1,1 +1,18 @@
-<p>multiplicationtable works!</p>
+<div>
+    <h2>Multiplication Table</h2>
+
+    <div>
+        <label for="numberInput">Enter a number:</label>
+        <input id="numberInput" type="number" [(ngModel)]="number" placeholder="Enter a number" />
+        <br>
+        <br>
+        <button (click)="generateTable()">Generate Table</button>
+    </div>
+
+    <div *ngIf="table.length > 0">
+        <h3>Multiplication Table for {{ number }}:</h3>
+        <ul>
+            <li *ngFor="let result of table">{{ number }} x {{ table.indexOf(result) + 1 }} = {{ result }}</li>
+        </ul>
+    </div>
+</div>
