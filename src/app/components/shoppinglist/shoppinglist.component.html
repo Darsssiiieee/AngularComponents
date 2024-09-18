@@ -1,1 +1,16 @@
-<p>shoppinglist works!</p>
+<div class="shopping-list-container">
+    <h2>Shopping List</h2>
+
+    <form (ngSubmit)="addItem()">
+        <label for="itemInput">Add an item:</label>
+        <input type="text" id="itemInput" [(ngModel)]="newItem" name="item" placeholder="Enter item name" required />
+        <button type="submit">Add Item</button>
+    </form>
+
+    <ul>
+        <li *ngFor="let item of items; let i = index">
+            {{ item }}
+            <button (click)="removeItem(i)">Remove</button>
+        </li>
+    </ul>
+</div>
