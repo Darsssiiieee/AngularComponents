@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './simpleform.component.css'
 })
 export class SimpleformComponent {
+  name: string = '';
+  email: string = '';
 
+  submittedData: any = null;
+
+  onSubmit() {
+    this.submittedData = {
+      name: this.name,
+      email: this.email
+    };
+  }
 }
