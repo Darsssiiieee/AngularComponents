@@ -1,1 +1,10 @@
-<p>showdate works!</p>
+<div>
+    <h2>Show Date and Time</h2>
+
+    <button (click)="showDateTime()">Show Current Date and Time</button>
+
+    <div *ngIf="currentDateTime">
+        <h3>Current Date and Time:</h3>
+        <p>{{ currentDateTime }}</p>
+    </div>
+</div>
