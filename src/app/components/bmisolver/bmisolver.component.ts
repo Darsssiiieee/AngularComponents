@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './bmisolver.component.css'
 })
 export class BmisolverComponent {
+  height: number | null = null;
+  weight: number | null = null;
+  bmi: number | null = null;
 
+  calculateBMI() {
+    if (this.height && this.weight) {
+      const heightInMeters = this.height / 100;
+      this.bmi = this.weight / (heightInMeters * heightInMeters);
+    }
+  }
 }
