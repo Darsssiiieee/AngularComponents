@@ -1,1 +1,14 @@
-<p>uppercaseconverter works!</p>
+<div class="uppercase-converter-container">
+    <h2>Uppercase Converter</h2>
+
+    <form (ngSubmit)="convertToUppercase()">
+        <label for="inputString">Enter a String:</label>
+        <input type="text" id="inputString" [(ngModel)]="inputString" name="inputString" placeholder="Enter your text" required />
+
+        <button type="submit">Convert to Uppercase</button>
+    </form>
+
+    <div *ngIf="uppercaseString">
+        <h3>Uppercase String: {{ uppercaseString }}</h3>
+    </div>
+</div>

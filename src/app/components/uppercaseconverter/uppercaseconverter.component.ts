@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './uppercaseconverter.component.css'
 })
 export class UppercaseconverterComponent {
+  inputString: string = '';
+  uppercaseString: string | null = null;
 
+  convertToUppercase() {
+    this.uppercaseString = this.inputString.toUpperCase();
+  }
 }
