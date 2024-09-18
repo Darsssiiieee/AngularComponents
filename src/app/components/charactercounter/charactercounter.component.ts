@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './charactercounter.component.css'
 })
 export class CharactercounterComponent {
+  inputString: string = '';
+  characterCount: number | null = null;
 
+  countCharacters() {
+    if (this.inputString.trim()) {
+      this.characterCount = this.inputString.length;
+    } else {
+      this.characterCount = 0;
+    }
+  }
 }
