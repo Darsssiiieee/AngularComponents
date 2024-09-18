@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrl: './wordshuffler.component.css'
 })
 export class WordshufflerComponent {
+  inputWord: string = '';
+  shuffledWord: string | null = null;
 
+  shuffleLetters() {
+    if (this.inputWord) {
+      this.shuffledWord = this.shuffle(this.inputWord);
+    }
+  }
+
+  private shuffle(word: string): string {
+    let array = word.split('');
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array.join('');
+  }
 }
