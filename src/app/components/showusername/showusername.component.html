@@ -1,1 +1,16 @@
-<p>showusername works!</p>
+<div>
+    <h2>Show Username</h2>
+
+    <div>
+        <label for="usernameInput">Enter your username:</label>
+        <input id="usernameInput" type="text" [(ngModel)]="username" name="username" placeholder="Enter your username" />
+        <br>
+        <br>
+        <button (click)="displayUsername()">Display Username</button>
+    </div>
+
+    <div *ngIf="displayedUsername">
+        <h3>Your Username:</h3>
+        <p>{{ displayedUsername }}</p>
+    </div>
+</div>
