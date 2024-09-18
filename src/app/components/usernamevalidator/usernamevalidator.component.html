@@ -1,1 +1,16 @@
-<p>usernamevalidator works!</p>
+<div class="username-validator-container">
+    <h2>Username Validator</h2>
+
+    <form (ngSubmit)="validateUsername()">
+        <div>
+            <label for="username">Enter Username:</label>
+            <input type="text" id="username" [(ngModel)]="username" name="username" placeholder="Enter your username" required />
+        </div>
+
+        <button type="submit">Validate Username</button>
+    </form>
+
+    <div *ngIf="validationMessage">
+        <h3>{{ validationMessage }}</h3>
+    </div>
+</div>
