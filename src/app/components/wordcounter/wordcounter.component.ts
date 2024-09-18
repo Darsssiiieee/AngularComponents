@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './wordcounter.component.css'
 })
 export class WordcounterComponent {
+  inputString: string = '';
+  wordCount: number | null = null;
 
+  countWords() {
+    if (this.inputString.trim()) {
+      this.wordCount = this.inputString.trim().split(/\s+/).length;
+    } else {
+      this.wordCount = 0;
+    }
+  }
 }
