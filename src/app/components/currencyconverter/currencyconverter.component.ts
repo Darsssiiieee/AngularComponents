@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './currencyconverter.component.css'
 })
 export class CurrencyconverterComponent {
+  amountUSD: number | null = null;
+  amountPHP: number | null = null;
+  exchangeRate: number = 56;
 
+  convertToPHP() {
+    if (this.amountUSD !== null) {
+      this.amountPHP = this.amountUSD * this.exchangeRate;
+    }
+  }
 }
