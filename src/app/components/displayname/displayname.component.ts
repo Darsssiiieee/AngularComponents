@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './displayname.component.css'
 })
 export class DisplaynameComponent {
+  name: string = '';
+  displayName: string = '';
+
+  showName() {
+    this.displayName = this.name;
+  } 
 
 }

@@ -6,11 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './showhellobutton.component.css'
 })
 export class ShowhellobuttonComponent {
-  message: string = '';  // This will hold the message to display
+  message: string = '';
 
-  // Method to set the message
   showMessage() {
-    this.message = 'Hello World';
+    this.message = 'Hello World!';
 
   }
 }
