@@ -40,6 +40,7 @@ import { CurrencyformatterComponent } from './components/currencyformatter/curre
 import { RandomquotedisplayComponent } from './components/randomquotedisplay/randomquotedisplay.component';
 import { UppercasegreetingComponent } from './components/uppercasegreeting/uppercasegreeting.component';
 import { DivisiblecheckerComponent } from './components/divisiblechecker/divisiblechecker.component';
+import { AlertComponent } from './components/alert/alert.component';
 
 const routes: Routes = [
   { path: 'display-hello-world', component: DisplayhelloworldComponent },
@@ -82,6 +83,7 @@ const routes: Routes = [
     { path: 'random-quote-display', component: RandomquotedisplayComponent },
     { path: 'uppercase-greeting', component: UppercasegreetingComponent },
     { path: 'divisible-checker', component: DivisiblecheckerComponent },
+    { path: 'alert', component: AlertComponent },
 ];
 
 @NgModule({
