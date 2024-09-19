@@ -48,6 +48,7 @@ import { EmojiDescriptionComponent } from './components/emoji-description/emoji-
 import { VowelcounterComponent } from './components/vowelcounter/vowelcounter.component';
 import { SeparationarrayComponent } from './components/separationarray/separationarray.component';
 import { ShapeselectorComponent } from './components/shapeselector/shapeselector.component';
+import { RandomSongsComponent } from './components/random-songs/random-songs.component';
 
 const routes: Routes = [
   { path: 'display-hello-world', component: DisplayhelloworldComponent },
@@ -97,7 +98,8 @@ const routes: Routes = [
     { path: 'emoji-description', component: EmojiDescriptionComponent},
     { path: 'vowelcounter', component: VowelcounterComponent},
     { path: 'separationarray', component: SeparationarrayComponent},
-    { path: 'shapeselector', component: ShapeselectorComponent}
+    { path: 'shapeselector', component: ShapeselectorComponent},
+    { path: 'random-songs', component: RandomSongsComponent}
 ];
 
 @NgModule({
