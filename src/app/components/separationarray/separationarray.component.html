@@ -1,1 +1,9 @@
-<p>separationarray works!</p>
+<h2>(Note: Use comma(,) to separate array)</h2>
+<label for="arrayInput">Enter array:</label>
+<input type="text" id="arrayInput" [(ngModel)]="arrayInput" name="arrayInput" required>
+
+<button (click)="separateArray()">Enter Array</button>
+
+<ul *ngIf="separatedArray.length">
+  <li *ngFor="let item of separatedArray">{{ item }}</li>
+</ul>

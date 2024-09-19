@@ -46,6 +46,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { StopwatchComponent } from './components/stopwatch/stopwatch.component';
 import { EmojiDescriptionComponent } from './components/emoji-description/emoji-description.component';
 import { VowelcounterComponent } from './components/vowelcounter/vowelcounter.component';
+import { SeparationarrayComponent } from './components/separationarray/separationarray.component';
 
 const routes: Routes = [
   { path: 'display-hello-world', component: DisplayhelloworldComponent },
@@ -94,6 +95,7 @@ const routes: Routes = [
     { path: 'stopwatch', component: StopwatchComponent},
     { path: 'emoji-description', component: EmojiDescriptionComponent},
     { path: 'vowelcounter', component: VowelcounterComponent},
+    { path: 'separationarray', component: SeparationarrayComponent}
 ];
 
 @NgModule({
