@@ -49,6 +49,7 @@ import { VowelcounterComponent } from './components/vowelcounter/vowelcounter.co
 import { SeparationarrayComponent } from './components/separationarray/separationarray.component';
 import { ShapeselectorComponent } from './components/shapeselector/shapeselector.component';
 import { RandomSongsComponent } from './components/random-songs/random-songs.component';
+import { TranslatorComponent } from './components/translator/translator.component';
 
 const routes: Routes = [
   { path: 'display-hello-world', component: DisplayhelloworldComponent },
@@ -99,7 +100,8 @@ const routes: Routes = [
     { path: 'vowelcounter', component: VowelcounterComponent},
     { path: 'separationarray', component: SeparationarrayComponent},
     { path: 'shapeselector', component: ShapeselectorComponent},
-    { path: 'random-songs', component: RandomSongsComponent}
+    { path: 'random-songs', component: RandomSongsComponent},
+    { path: 'translator', component: TranslatorComponent}
 ];
 
 @NgModule({

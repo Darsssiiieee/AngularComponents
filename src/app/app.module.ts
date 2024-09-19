@@ -52,8 +52,8 @@ import { VowelcounterComponent } from './components/vowelcounter/vowelcounter.co
 import { SeparationarrayComponent } from './components/separationarray/separationarray.component';
 import { ShapeselectorComponent } from './components/shapeselector/shapeselector.component';
 import { RandomSongsComponent } from './components/random-songs/random-songs.component';
-import { MostWatchAnimeComponent } from './components/most-watch-anime/most-watch-anime.component';
 import { PersonalListComponent } from './components/personal-list/personal-list.component';
+import { TranslatorComponent } from './components/translator/translator.component';
 
 @NgModule({
   declarations: [
@@ -106,8 +106,8 @@ import { PersonalListComponent } from './components/personal-list/personal-list.
     SeparationarrayComponent,
     ShapeselectorComponent,
     RandomSongsComponent,
-    MostWatchAnimeComponent,
     PersonalListComponent,
+    TranslatorComponent,
   ],
   imports: [
     BrowserModule,

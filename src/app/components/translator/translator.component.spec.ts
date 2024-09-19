@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MostWatchAnimeComponent } from './most-watch-anime.component';
+import { TranslatorComponent } from './translator.component';
 
-describe('MostWatchAnimeComponent', () => {
-  let component: MostWatchAnimeComponent;
-  let fixture: ComponentFixture<MostWatchAnimeComponent>;
+describe('TranslatorComponent', () => {
+  let component: TranslatorComponent;
+  let fixture: ComponentFixture<TranslatorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MostWatchAnimeComponent]
+      declarations: [TranslatorComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MostWatchAnimeComponent);
+    fixture = TestBed.createComponent(TranslatorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
