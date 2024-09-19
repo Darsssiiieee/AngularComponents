@@ -44,6 +44,7 @@ import { AlertComponent } from './components/alert/alert.component';
 import { PersonalListComponent } from './components/personal-list/personal-list.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { StopwatchComponent } from './components/stopwatch/stopwatch.component';
+import { EmojiDescriptionComponent } from './components/emoji-description/emoji-description.component';
 
 const routes: Routes = [
   { path: 'display-hello-world', component: DisplayhelloworldComponent },
@@ -90,6 +91,7 @@ const routes: Routes = [
     { path: 'personal-list', component: PersonalListComponent},
     { path: 'gallery', component: GalleryComponent},
     { path: 'stopwatch', component: StopwatchComponent},
+    { path: 'emoji-description', component: EmojiDescriptionComponent}
 ];
 
 @NgModule({

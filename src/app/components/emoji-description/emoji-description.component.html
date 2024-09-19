@@ -1,1 +1,11 @@
-<p>emoji-description works!</p>
+<div>
+    <h1>Select Emoji</h1>
+    <button *ngFor="let emoji of emojis" (click)="selectEmoji(emoji.emoji, emoji.description)">
+      {{ emoji.emoji }}
+    </button>
+  </div>
+  
+  <div *ngIf="selectedEmoji && selectedDescription">
+    <p>Selected Emoji: {{ selectedEmoji }}</p>
+    <p>Mood Description: {{ selectedDescription }}</p>
+  </div>
