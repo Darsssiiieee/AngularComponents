@@ -44,6 +44,16 @@ import { CurrencyformatterComponent } from './components/currencyformatter/curre
 import { RandomquotedisplayComponent } from './components/randomquotedisplay/randomquotedisplay.component';
 import { UppercasegreetingComponent } from './components/uppercasegreeting/uppercasegreeting.component';
 import { DivisiblecheckerComponent } from './components/divisiblechecker/divisiblechecker.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { AlertComponent } from './components/alert/alert.component';
+import { StopwatchComponent } from './components/stopwatch/stopwatch.component';
+import { EmojiDescriptionComponent } from './components/emoji-description/emoji-description.component';
+import { VowelcounterComponent } from './components/vowelcounter/vowelcounter.component';
+import { SeparationarrayComponent } from './components/separationarray/separationarray.component';
+import { ShapeselectorComponent } from './components/shapeselector/shapeselector.component';
+import { RandomSongsComponent } from './components/random-songs/random-songs.component';
+import { MostWatchAnimeComponent } from './components/most-watch-anime/most-watch-anime.component';
+import { PersonaListComponent } from './components/persona-list/persona-list.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +97,17 @@ import { DivisiblecheckerComponent } from './components/divisiblechecker/divisib
     CurrencyformatterComponent,
     RandomquotedisplayComponent,
     UppercasegreetingComponent,
-    DivisiblecheckerComponent
+    DivisiblecheckerComponent,
+    GalleryComponent,
+    AlertComponent,
+    StopwatchComponent,
+    EmojiDescriptionComponent,
+    VowelcounterComponent,
+    SeparationarrayComponent,
+    ShapeselectorComponent,
+    RandomSongsComponent,
+    MostWatchAnimeComponent,
+    PersonaListComponent
   ],
   imports: [
     BrowserModule,
