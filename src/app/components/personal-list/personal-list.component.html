@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Personal List</h1>
+
+
+    <ul *ngIf="notifications.length > 0">
+        <li *ngFor="let notification of notifications">{{ notification }}</li>
+    </ul>
+
+
+    <div>
+        <input type="text" [(ngModel)]="newNotification" placeholder="Enter your notification" />
+        <button (click)="addNotification()">Add List</button>
+        <button (click)="clearNotifications()">Clear List</button>
+    </div>
+</div>

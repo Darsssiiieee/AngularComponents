@@ -53,7 +53,7 @@ import { SeparationarrayComponent } from './components/separationarray/separatio
 import { ShapeselectorComponent } from './components/shapeselector/shapeselector.component';
 import { RandomSongsComponent } from './components/random-songs/random-songs.component';
 import { MostWatchAnimeComponent } from './components/most-watch-anime/most-watch-anime.component';
-import { PersonaListComponent } from './components/persona-list/persona-list.component';
+import { PersonalListComponent } from './components/personal-list/personal-list.component';
 
 @NgModule({
   declarations: [
@@ -107,7 +107,7 @@ import { PersonaListComponent } from './components/persona-list/persona-list.com
     ShapeselectorComponent,
     RandomSongsComponent,
     MostWatchAnimeComponent,
-    PersonaListComponent
+    PersonalListComponent,
   ],
   imports: [
     BrowserModule,

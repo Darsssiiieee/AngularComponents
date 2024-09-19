@@ -41,6 +41,7 @@ import { RandomquotedisplayComponent } from './components/randomquotedisplay/ran
 import { UppercasegreetingComponent } from './components/uppercasegreeting/uppercasegreeting.component';
 import { DivisiblecheckerComponent } from './components/divisiblechecker/divisiblechecker.component';
 import { AlertComponent } from './components/alert/alert.component';
+import { PersonalListComponent } from './components/personal-list/personal-list.component';
 
 const routes: Routes = [
   { path: 'display-hello-world', component: DisplayhelloworldComponent },
@@ -84,6 +85,7 @@ const routes: Routes = [
     { path: 'uppercase-greeting', component: UppercasegreetingComponent },
     { path: 'divisible-checker', component: DivisiblecheckerComponent },
     { path: 'alert', component: AlertComponent },
+    { path: 'personal-list', component: PersonalListComponent}
 ];
 
 @NgModule({
