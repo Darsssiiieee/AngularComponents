@@ -1,1 +1,13 @@
-<p>gallery works!</p>
+<div class="gallery-container">
+    <h2>Gallery</h2>
+
+    <div class="image-viewer">
+        <img [src]="images[currentIndex]" alt="Gallery Image" />
+    </div>
+
+
+    <div class="controls">
+        <button (click)="prevImage()" [disabled]="currentIndex === 0">Previous</button>
+        <button (click)="nextImage()" [disabled]="currentIndex === images.length - 1">Next</button>
+    </div>
+</div>
