@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './shapeselector.component.css'
 })
 export class ShapeselectorComponent {
+  shapes: string[] = ['Circle', 'Square', 'Triangle', 'Rectangle'];
+  selectedShape: string = '';
 
+  selectShape(shape: string) {
+    this.selectedShape = shape;
+  }
 }
